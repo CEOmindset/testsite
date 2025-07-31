@@ -1,0 +1,78 @@
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f0f0f0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        
+        .eye {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            background: white;
+            border-radius: 50%;
+            border: 3px solid #333;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+        
+        .pupil {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: #222;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: transform 0.05s linear;
+        }
+        
+        .shine {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: white;
+            border-radius: 50%;
+            top: 15px;
+            left: 15px;
+            z-index: 10;
+        }
+        
+        .instructions {
+            margin-top: 30px;
+            color: #666;
+        }
+
+                /* Стили для человечка */
+        .human-figure {
+            position: fixed;
+            right: -10px;
+            bottom:-10px;
+            z-index: 1000;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        /* .human-figure:hover {
+            transform: scale(1.1) rotate(5deg);
+        } */
+        
+        .human-figure img {
+            width: 200px;
+            height: auto;
+            filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+        }
